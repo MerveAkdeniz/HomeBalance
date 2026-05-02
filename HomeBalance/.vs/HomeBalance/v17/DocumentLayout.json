@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Project\\HomeBalance\\HomeBalance\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|c:\\project\\homebalance\\homebalance\\homebalance.domain\\entities\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|solutionrelative:homebalance.domain\\entities\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|c:\\project\\homebalance\\homebalance\\homebalance.domain\\entities\\shoppingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|solutionrelative:homebalance.domain\\entities\\shoppingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|c:\\project\\homebalance\\homebalance\\homebalance.domain\\entities\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|solutionrelative:homebalance.domain\\entities\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|c:\\project\\homebalance\\homebalance\\homebalance.domain\\entities\\groupmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|solutionrelative:homebalance.domain\\entities\\groupmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|c:\\project\\homebalance\\homebalance\\homebalance.domain\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A69ABCE1-02C7-4097-8CBD-6198DAC9FBC0}|HomeBalance.Domain\\HomeBalance.Domain.csproj|solutionrelative:homebalance.domain\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +38,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\Bill.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Domain\\Entities\\Bill.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\Bill.cs",
+              "RelativeToolTip": "HomeBalance.Domain\\Entities\\Bill.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T19:17:26.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShoppingItem.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\ShoppingItem.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Domain\\Entities\\ShoppingItem.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\ShoppingItem.cs",
+              "RelativeToolTip": "HomeBalance.Domain\\Entities\\ShoppingItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T19:14:39.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Expense.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\Expense.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Domain\\Entities\\Expense.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\Expense.cs",
+              "RelativeToolTip": "HomeBalance.Domain\\Entities\\Expense.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T19:12:46.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GroupMember.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\GroupMember.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Domain\\Entities\\GroupMember.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\GroupMember.cs",
+              "RelativeToolTip": "HomeBalance.Domain\\Entities\\GroupMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T19:09:09.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Group.cs",
               "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\Group.cs",
               "RelativeDocumentMoniker": "HomeBalance.Domain\\Entities\\Group.cs",
@@ -39,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "HomeBalance.Domain\\Entities\\User.cs",
@@ -47,29 +123,19 @@
               "RelativeToolTip": "HomeBalance.Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T16:54:57.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T16:54:57.828Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeBalance.Domain",
+              "DocumentIndex": 6,
+              "Title": "HomeBalance.Domain.csproj",
               "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\HomeBalance.Domain.csproj",
               "RelativeDocumentMoniker": "HomeBalance.Domain\\HomeBalance.Domain.csproj",
               "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Domain\\HomeBalance.Domain.csproj",
               "RelativeToolTip": "HomeBalance.Domain\\HomeBalance.Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-02T16:54:14.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2026-05-02T16:54:14.44Z"
             }
           ]
         }
