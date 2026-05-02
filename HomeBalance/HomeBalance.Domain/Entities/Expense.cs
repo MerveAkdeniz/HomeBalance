@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeBalance.Domain.Entities
 {
-    class Expense
+    public class Expense
     {
         public Guid Id { get; set; }
 

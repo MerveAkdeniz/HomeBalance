@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zbOc4ReD80X5oJCAN+IwqNLsPp1s1I/JcnBpzehRm4s=",
+  "Source": "HomeBalance.API",
+  "BasePath": "_content/HomeBalance.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

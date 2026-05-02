@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HomeBalance.Tests/1.0.0": {
+        "runtime": {
+          "HomeBalance.Tests.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HomeBalance.Tests/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

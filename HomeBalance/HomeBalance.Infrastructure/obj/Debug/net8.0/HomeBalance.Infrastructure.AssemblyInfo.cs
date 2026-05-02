@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HomeBalance.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3295536f099c857e2e451c42d8c7cc600318050b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ef40483dfedfe7915c0bd56805b31f2fc49e897")]
 [assembly: System.Reflection.AssemblyProductAttribute("HomeBalance.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HomeBalance.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

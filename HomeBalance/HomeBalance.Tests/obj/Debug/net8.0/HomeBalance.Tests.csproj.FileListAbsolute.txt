@@ -1,0 +1,12 @@
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\bin\Debug\net8.0\HomeBalance.Tests.deps.json
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\bin\Debug\net8.0\HomeBalance.Tests.dll
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\bin\Debug\net8.0\HomeBalance.Tests.pdb
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.AssemblyInfoInputs.cache
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.AssemblyInfo.cs
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.csproj.CoreCompileInputs.cache
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.sourcelink.json
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.dll
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\refint\HomeBalance.Tests.dll
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.pdb
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\ref\HomeBalance.Tests.dll

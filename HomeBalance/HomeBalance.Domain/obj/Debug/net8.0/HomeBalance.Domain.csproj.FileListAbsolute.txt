@@ -1,0 +1,12 @@
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\bin\Debug\net8.0\HomeBalance.Domain.deps.json
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\bin\Debug\net8.0\HomeBalance.Domain.dll
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\bin\Debug\net8.0\HomeBalance.Domain.pdb
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\HomeBalance.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\HomeBalance.Domain.AssemblyInfoInputs.cache
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\HomeBalance.Domain.AssemblyInfo.cs
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\HomeBalance.Domain.csproj.CoreCompileInputs.cache
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\HomeBalance.Domain.sourcelink.json
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\HomeBalance.Domain.dll
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\refint\HomeBalance.Domain.dll
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\HomeBalance.Domain.pdb
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Domain\obj\Debug\net8.0\ref\HomeBalance.Domain.dll

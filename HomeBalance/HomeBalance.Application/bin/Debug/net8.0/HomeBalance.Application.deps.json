@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HomeBalance.Application/1.0.0": {
+        "dependencies": {
+          "HomeBalance.Domain": "1.0.0"
+        },
+        "runtime": {
+          "HomeBalance.Application.dll": {}
+        }
+      },
+      "HomeBalance.Domain/1.0.0": {
+        "runtime": {
+          "HomeBalance.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HomeBalance.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HomeBalance.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
