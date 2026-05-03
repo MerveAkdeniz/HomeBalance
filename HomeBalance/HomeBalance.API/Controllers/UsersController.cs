@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using HomeBalance.Infrastructure.Data;
 using HomeBalance.Domain.Entities;
+using HomeBalance.Application.DTOs;
 
 namespace HomeBalance.API.Controllers;
 
@@ -16,17 +17,38 @@ public class UsersController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateUser(User user)
+    public IActionResult CreateUser(CreateUserDto dto)
     {
+        var user = new User
+        {
+            Id = Guid.NewGuid(),
+            Name = dto.Name,
+            Email = dto.Email,
+            PasswordHash = dto.Password,
+            CreatedAt = DateTime.UtcNow
+        };
+
         _context.Users.Add(user);
         _context.SaveChanges();
 
         return Ok(user);
     }
+
     [HttpGet]
     public IActionResult GetUsers()
     {
-        var users = _context.Users.ToList();
-        return Ok(users);
+        return Ok(_context.Users.ToList());
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteUser(Guid id)
+    {
+        var user = _context.Users.Find(id);
+        if (user == null) return NotFound();
+
+        _context.Users.Remove(user);
+        _context.SaveChanges();
+
+        return Ok();
     }
 }
