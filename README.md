@@ -45,7 +45,6 @@ This project was developed in 4 main layers, strictly adhering to **Clean Archit
 *   **Database:** Microsoft SQL Server
 *   **Documentation:** Swagger / OpenAPI
 *   **Architecture Approach:** Clean Architecture, N-Tier Architecture
-*   **Testing:** xUnit (Ready infrastructure for optional test integrations)
 
 ---
 
@@ -100,7 +99,7 @@ Once the project is running, navigate to `https://localhost:<port>/swagger` in y
 {
   "name": "Merve",
   "email": "merve@gmail.com",
-  "password": "123"
+  "password": "Merve123!"
 }
 ```
 
@@ -121,7 +120,7 @@ Once the project is running, navigate to `https://localhost:<port>/swagger` in y
 
 **Merve Akdeniz**  
 *Information Systems Engineer*  
-[LinkedIn](https://www.linkedin.com/in/merveakdeniz) | [GitHub](https://github.com/MerveAkdeniz)
+[LinkedIn](https://www.linkedin.com/in/merve-akdeniz-329409214/) | [GitHub](https://github.com/MerveAkdeniz)
 
 ---
 *This project was developed to produce scalable solutions to real-world problems by taking modern software development standards into account.*
