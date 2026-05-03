@@ -11,91 +11,91 @@
 <br/>
 
 <p align="center">
-  <b>Ev arkadaşları ve ortak yaşam alanları için geliştirilmiş, harcama ve borç takibini otomatikleştiren yüksek performanslı RESTful API projesi.</b>
+  <b>A high-performance RESTful API designed for roommates and shared living spaces to automate expense and debt tracking.</b>
 </p>
 
 ---
 
-## 🎯 Projenin Amacı
+## 🎯 Project Goal
 
-Ortak evlerde veya gruplarda yaşanan *"Kim ne ödedi?"*, *"Kim kime ne kadar borçlu?"* gibi karmaşık hesaplama süreçlerini ortadan kaldırmayı hedefler. Gelişmiş **Balance Engine (Borç Hesaplama Motoru)** sayesinde, çoklu ve karmaşık para transferlerini analiz ederek en sade ödeme planını çıkarır.
+Aims to eliminate the complex calculation processes such as *"Who paid for what?"* and *"Who owes how much to whom?"* experienced in shared homes or groups. Thanks to the advanced **Balance Engine**, it analyzes multiple and complex money transfers and extracts the simplest payment plan.
 
-## ✨ Öne Çıkan Özellikler
+## ✨ Key Features
 
-*   👥 **Kullanıcı ve Grup Yönetimi:** Kullanıcılar oluşturulabilir ve birden fazla paylaşımlı gruba dahil olabilir.
-*   💸 **Harcama Takibi:** Gruplara özel harcamalar kaydedilebilir, harcamayı kimin yaptığı izlenebilir.
-*   ⚖️ **Akıllı Borç Hesaplama (Balance Engine):** Karmaşık borç döngülerini çözümleyerek kimin kime tam olarak ne kadar ödemesi gerektiğini net bir şekilde hesaplar.
-*   🛒 **Ortak İhtiyaç Listesi:** Ev eksikleri ve alışveriş listesinin (ShoppingItem) kolay yönetimi.
-*   🛡️ **Veri Güvenliği ve Doğrulama:** DTO'lar (Data Transfer Objects) ve Data Annotations/Validation ile güvenli, kontrollü veri akışı.
-*   📖 **Otomatik Dokümantasyon:** Swagger (OpenAPI) entegrasyonu ile tüm API uç noktalarının (endpoint) interaktif dokümantasyonu ve test imkanı.
+*   👥 **User & Group Management:** Users can be created and participate in multiple shared groups.
+*   💸 **Expense Tracking:** Group-specific expenses can be recorded, and who made the expense can be tracked.
+*   ⚖️ **Smart Debt Calculation (Balance Engine):** Resolves complex debt cycles and clearly calculates exactly who needs to pay how much to whom.
+*   🛒 **Shared Needs List:** Easy management of home needs and shopping lists (ShoppingItem).
+*   🛡️ **Data Security & Validation:** Secure, controlled data flow with DTOs (Data Transfer Objects) and Data Annotations/Validation.
+*   📖 **Automated Documentation:** Interactive documentation and testing capabilities for all API endpoints with Swagger (OpenAPI) integration.
 
-## 📐 Mimari ve Tasarım Desenleri
+## 📐 Architecture & Design Patterns
 
-Bu proje, kodun sürdürülebilirliğini, bağımsızlığını ve test edilebilirliğini en üst düzeye çıkarmak amacıyla **Clean Architecture (Temiz Mimari)** prensiplerine sıkı sıkıya bağlı kalınarak 4 temel katmanda geliştirilmiştir:
+This project was developed in 4 main layers, strictly adhering to **Clean Architecture** principles to maximize code maintainability, independence, and testability:
 
-1.  **Domain Layer:** Projenin kalbi. Temel Entity'ler ve arayüzler (Hiçbir dış kütüphaneye bağımlılık barındırmaz).
-2.  **Application Layer:** İş kuralları (Business Logic), DTO'lar ve Validation işlemleri.
-3.  **Infrastructure Layer:** Veritabanı bağlantıları, Entity Framework Core yapılandırmaları, veritabanı entegrasyonu ve SQL Server işlemleri.
-4.  **API Layer:** Gelen HTTP isteklerini karşılayan Controller'lar, Dependency Injection ayarları ve Swagger yapılandırması.
+1.  **Domain Layer:** The heart of the project. Core Entities and interfaces (No dependencies on external libraries).
+2.  **Application Layer:** Business Logic, DTOs, and Validation processes.
+3.  **Infrastructure Layer:** Database connections, Entity Framework Core configurations, database integration, and SQL Server operations.
+4.  **API Layer:** Controllers handling incoming HTTP requests, Dependency Injection setups, and Swagger configuration.
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
 *   **Platform:** ASP.NET Core Web API (.NET 8)
 *   **ORM:** Entity Framework Core
-*   **Veritabanı:** Microsoft SQL Server
-*   **Dokümantasyon:** Swagger / OpenAPI
-*   **Mimari Yaklaşım:** Clean Architecture, N-Tier Architecture
-*   **Test:** xUnit (Opsiyonel test entegrasyonları için hazır altyapı)
+*   **Database:** Microsoft SQL Server
+*   **Documentation:** Swagger / OpenAPI
+*   **Architecture Approach:** Clean Architecture, N-Tier Architecture
+*   **Testing:** xUnit (Ready infrastructure for optional test integrations)
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma
+## 🚀 Getting Started
 
-Projeyi yerel ortamınızda ayağa kaldırmak için aşağıdaki adımları izleyin:
+Follow the steps below to run the project in your local environment:
 
-### 1. Projeyi Klonlayın
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/MerveAkdeniz/HomeBalance.API.git
 cd HomeBalance.API
 ```
 
-### 2. Veritabanı Bağlantısını Ayarlayın
-API katmanındaki `appsettings.json` dosyasını açın ve SQL Server bağlantı dizenizi (Connection String) sisteminize uygun şekilde ekleyin:
+### 2. Configure Database Connection
+Open the `appsettings.json` file in the API layer and add your SQL Server connection string appropriately:
 ```json
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=HomeBalanceDb;Trusted_Connection=True;TrustServerCertificate=True;"
 }
 ```
 
-### 3. Migration İşlemleri ve Veritabanı Oluşturma
-Package Manager Console (PMC) üzerinden veya .NET CLI ile veritabanını ayağa kaldırın:
+### 3. Run Migrations & Create Database
+Create the database via Package Manager Console (PMC) or .NET CLI:
 ```bash
-# Package Manager Console Kullanıyorsanız:
+# If using Package Manager Console:
 Add-Migration InitialCreate -StartupProject HomeBalance.API
 Update-Database
 ```
 
-### 4. Projeyi Çalıştırın
+### 4. Run the Project
 ```bash
 dotnet run --project HomeBalance.API
 ```
-Proje çalıştıktan sonra tarayıcınızdan `https://localhost:<port>/swagger` adresine giderek API'yi arayüz üzerinden test edebilirsiniz.
+Once the project is running, navigate to `https://localhost:<port>/swagger` in your browser to test the API through the UI.
 
 ---
 
-## 🔌 Örnek Uç Noktalar (Endpoints)
+## 🔌 Example Endpoints
 
-| HTTP Metodu | Endpoint | Açıklama |
+| HTTP Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| `POST` | `/api/Users` | Yeni kullanıcı kaydı oluşturur |
-| `POST` | `/api/Groups` | Yeni bir ev/grup ortamı oluşturur |
-| `POST` | `/api/Expenses` | İlgili gruba yeni bir harcama faturası ekler |
-| `GET` | `/api/Balances/{groupId}` | **Grup içi detaylı borç durumunu hesaplar (Balance Engine)** |
+| `POST` | `/api/Users` | Creates a new user record |
+| `POST` | `/api/Groups` | Creates a new home/group environment |
+| `POST` | `/api/Expenses` | Adds a new expense bill to the relevant group |
+| `GET` | `/api/Balances/{groupId}` | **Calculates the detailed debt status within the group (Balance Engine)** |
 
 <details>
-<summary><b>Örnek JSON İsteklerini (Payload) Görmek İçin Tıklayın</b></summary>
+<summary><b>Click to View Example JSON Requests (Payloads)</b></summary>
 
-**Kullanıcı Oluşturma (POST /api/Users)**
+**Create User (POST /api/Users)**
 ```json
 {
   "name": "Merve",
@@ -104,7 +104,7 @@ Proje çalıştıktan sonra tarayıcınızdan `https://localhost:<port>/swagger`
 }
 ```
 
-**Harcama Ekleme (POST /api/Expenses)**
+**Add Expense (POST /api/Expenses)**
 ```json
 {
   "groupId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -117,11 +117,11 @@ Proje çalıştıktan sonra tarayıcınızdan `https://localhost:<port>/swagger`
 
 ---
 
-## 👩‍💻 Geliştirici
+## 👩‍💻 Developer
 
 **Merve Akdeniz**  
-*Bilişim Sistemleri Mühendisi*  
+*Information Systems Engineer*  
 [LinkedIn](https://www.linkedin.com/in/merveakdeniz) | [GitHub](https://github.com/MerveAkdeniz)
 
 ---
-*Bu proje, modern yazılım geliştirme standartları göz önünde bulundurularak, gerçek dünya problemlerine ölçeklenebilir çözümler üretmek amacıyla geliştirilmiştir.*
+*This project was developed to produce scalable solutions to real-world problems by taking modern software development standards into account.*
