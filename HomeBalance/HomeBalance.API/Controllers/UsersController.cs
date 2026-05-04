@@ -3,11 +3,13 @@ using HomeBalance.Infrastructure.Data;
 using HomeBalance.Domain.Entities;
 using HomeBalance.Application.DTOs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HomeBalance.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class UsersController : ControllerBase
 {
     private readonly AppDbContext _context;

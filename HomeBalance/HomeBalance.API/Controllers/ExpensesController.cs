@@ -5,11 +5,13 @@ using HomeBalance.Application.DTOs;
 using Microsoft.EntityFrameworkCore;
 using HomeBalance.Application.Repositories;
 using HomeBalance.Application.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HomeBalance.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class ExpensesController : ControllerBase
 {
     private readonly IExpenseService _service;
