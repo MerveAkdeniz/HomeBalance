@@ -2,6 +2,7 @@
 using HomeBalance.Infrastructure.Data;
 using HomeBalance.Domain.Entities;
 using HomeBalance.Application.DTOs;
+using Microsoft.EntityFrameworkCore;
 
 namespace HomeBalance.API.Controllers;
 
@@ -17,7 +18,7 @@ public class GroupsController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateGroup(CreateGroupDto dto)
+    public async Task<IActionResult> CreateGroup(CreateGroupDto dto)
     {
         var group = new Group
         {
@@ -26,25 +27,38 @@ public class GroupsController : ControllerBase
         };
 
         _context.Groups.Add(group);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
-        return Ok(group);
+        var response = new GroupResponseDto
+        {
+            Id = group.Id,
+            Name = group.Name
+        };
+
+        return Ok(response);
     }
 
     [HttpGet]
-    public IActionResult GetGroups()
+    public async Task<IActionResult> GetGroups()
     {
-        return Ok(_context.Groups.ToList());
+        var groups = await _context.Groups.ToListAsync();
+        var response = groups.Select(x => new GroupResponseDto
+        {
+            Id = x.Id,
+            Name = x.Name
+        }).ToList();
+
+        return Ok(response);
     }
 
     [HttpDelete("{id}")]
-    public IActionResult DeleteGroup(Guid id)
+    public async Task<IActionResult> DeleteGroup(Guid id)
     {
-        var group = _context.Groups.Find(id);
+        var group = await _context.Groups.FindAsync(id);
         if (group == null) return NotFound();
 
         _context.Groups.Remove(group);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
         return Ok();
     }

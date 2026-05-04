@@ -37,17 +37,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Expense"
+                "$ref": "#/components/schemas/CreateExpenseDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Expense"
+                "$ref": "#/components/schemas/CreateExpenseDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Expense"
+                "$ref": "#/components/schemas/CreateExpenseDto"
               }
             }
           }
@@ -101,17 +101,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GroupMember"
+                "$ref": "#/components/schemas/CreateGroupMemberDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/GroupMember"
+                "$ref": "#/components/schemas/CreateGroupMemberDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/GroupMember"
+                "$ref": "#/components/schemas/CreateGroupMemberDto"
               }
             }
           }
@@ -229,17 +229,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ShoppingItem"
+                "$ref": "#/components/schemas/CreateShoppingItemDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ShoppingItem"
+                "$ref": "#/components/schemas/CreateShoppingItemDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ShoppingItem"
+                "$ref": "#/components/schemas/CreateShoppingItemDto"
               }
             }
           }
@@ -368,84 +368,19 @@
           }
         }
       }
-    },
-    "/WeatherForecast": {
-      "get": {
-        "tags": [
-          "WeatherForecast"
-        ],
-        "operationId": "GetWeatherForecast",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
     "schemas": {
-      "CreateGroupDto": {
+      "CreateExpenseDto": {
+        "required": [
+          "amount",
+          "description",
+          "groupId",
+          "paidByUserId"
+        ],
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "CreateUserDto": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Expense": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "groupId": {
             "type": "string",
             "format": "uuid"
@@ -455,27 +390,38 @@
             "format": "uuid"
           },
           "amount": {
+            "maximum": 100000,
+            "minimum": 0,01,
             "type": "number",
             "format": "double"
           },
           "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
+            "minLength": 2,
+            "type": "string"
           }
         },
         "additionalProperties": false
       },
-      "GroupMember": {
+      "CreateGroupDto": {
+        "required": [
+          "name"
+        ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
+          "name": {
+            "minLength": 2,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateGroupMemberDto": {
+        "required": [
+          "groupId",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
           "userId": {
             "type": "string",
             "format": "uuid"
@@ -491,46 +437,44 @@
         },
         "additionalProperties": false
       },
-      "ShoppingItem": {
+      "CreateShoppingItemDto": {
+        "required": [
+          "groupId",
+          "name"
+        ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "groupId": {
             "type": "string",
             "format": "uuid"
           },
           "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "isPurchased": {
-            "type": "boolean"
+            "minLength": 2,
+            "type": "string"
           }
         },
         "additionalProperties": false
       },
-      "WeatherForecast": {
+      "CreateUserDto": {
+        "required": [
+          "email",
+          "name",
+          "password"
+        ],
         "type": "object",
         "properties": {
-          "date": {
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
             "type": "string",
-            "format": "date"
+            "format": "email"
           },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
+          "password": {
+            "minLength": 3,
+            "type": "string"
           }
         },
         "additionalProperties": false

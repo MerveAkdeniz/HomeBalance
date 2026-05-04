@@ -17,5 +17,9 @@ namespace HomeBalance.Domain.Entities
         public string PasswordHash { get; set; } = null!;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        public ICollection<GroupMember> GroupMembers { get; set; } = new List<GroupMember>();
+
+        public ICollection<Expense> Expenses { get; set; } = new List<Expense>();
     }
 }

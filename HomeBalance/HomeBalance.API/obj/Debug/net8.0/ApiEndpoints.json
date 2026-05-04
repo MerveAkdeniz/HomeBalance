@@ -24,8 +24,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "expense",
-        "Type": "HomeBalance.Domain.Entities.Expense",
+        "Name": "dto",
+        "Type": "HomeBalance.Application.DTOs.CreateExpenseDto",
         "IsRequired": true
       }
     ],
@@ -66,8 +66,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "member",
-        "Type": "HomeBalance.Domain.Entities.GroupMember",
+        "Name": "dto",
+        "Type": "HomeBalance.Application.DTOs.CreateGroupMemberDto",
         "IsRequired": true
       }
     ],
@@ -150,8 +150,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "item",
-        "Type": "HomeBalance.Domain.Entities.ShoppingItem",
+        "Name": "dto",
+        "Type": "HomeBalance.Application.DTOs.CreateShoppingItemDto",
         "IsRequired": true
       }
     ],
@@ -240,26 +240,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HomeBalance.API.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[HomeBalance.API.WeatherForecast, HomeBalance.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

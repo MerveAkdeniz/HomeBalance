@@ -15,5 +15,8 @@ namespace HomeBalance.Domain.Entities
         public Guid GroupId { get; set; }
 
         public string Role { get; set; } = "Member";
+        public User User { get; set; } = null!;
+
+        public Group Group { get; set; } = null!;
     }
 }

@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Project\\HomeBalance\\HomeBalance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A03760A5-7E32-4B74-9722-1CF7140CFDB5}|HomeBalance.API\\HomeBalance.API.csproj|c:\\project\\homebalance\\homebalance\\homebalance.api\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03760A5-7E32-4B74-9722-1CF7140CFDB5}|HomeBalance.API\\HomeBalance.API.csproj|solutionrelative:homebalance.api\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\dtos\\creategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\dtos\\creategroupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A03760A5-7E32-4B74-9722-1CF7140CFDB5}|HomeBalance.API\\HomeBalance.API.csproj|c:\\project\\homebalance\\homebalance\\homebalance.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03760A5-7E32-4B74-9722-1CF7140CFDB5}|HomeBalance.API\\HomeBalance.API.csproj|solutionrelative:homebalance.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\dtos\\createexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\dtos\\createexpensedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\services\\expenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\services\\expenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\dtos\\creategroupmemberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\dtos\\creategroupmemberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\services\\iexpenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\services\\iexpenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\dtos\\createshoppingitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\dtos\\createshoppingitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9693F080-AD52-45C6-80C8-D2B3CB8FE0DF}|HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj|c:\\project\\homebalance\\homebalance\\homebalance.infrastructure\\repositories\\expenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9693F080-AD52-45C6-80C8-D2B3CB8FE0DF}|HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj|solutionrelative:homebalance.infrastructure\\repositories\\expenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9693F080-AD52-45C6-80C8-D2B3CB8FE0DF}|HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj|c:\\project\\homebalance\\homebalance\\homebalance.infrastructure\\homebalance.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9693F080-AD52-45C6-80C8-D2B3CB8FE0DF}|HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj|solutionrelative:homebalance.infrastructure\\homebalance.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\repositories\\iexpenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\repositories\\iexpenserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|c:\\project\\homebalance\\homebalance\\homebalance.application\\homebalance.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F98C02E8-6ECB-44E8-A4B3-9757AC2031C4}|HomeBalance.Application\\HomeBalance.Application.csproj|solutionrelative:homebalance.application\\homebalance.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,80 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateExpenseDto.cs",
-              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateExpenseDto.cs",
-              "RelativeDocumentMoniker": "HomeBalance.Application\\DTOs\\CreateExpenseDto.cs",
-              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateExpenseDto.cs",
-              "RelativeToolTip": "HomeBalance.Application\\DTOs\\CreateExpenseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Title": "ExpenseService.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\Services\\ExpenseService.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Application\\Services\\ExpenseService.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\Services\\ExpenseService.cs",
+              "RelativeToolTip": "HomeBalance.Application\\Services\\ExpenseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T10:38:16.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateGroupDto.cs",
-              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateGroupDto.cs",
-              "RelativeDocumentMoniker": "HomeBalance.Application\\DTOs\\CreateGroupDto.cs",
-              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateGroupDto.cs",
-              "RelativeToolTip": "HomeBalance.Application\\DTOs\\CreateGroupDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T10:38:08.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateUserDto.cs",
-              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateUserDto.cs",
-              "RelativeDocumentMoniker": "HomeBalance.Application\\DTOs\\CreateUserDto.cs",
-              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateUserDto.cs",
-              "RelativeToolTip": "HomeBalance.Application\\DTOs\\CreateUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T10:37:52.32Z",
+              "WhenOpened": "2026-05-03T12:20:22.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateGroupMemberDto.cs",
-              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateGroupMemberDto.cs",
-              "RelativeDocumentMoniker": "HomeBalance.Application\\DTOs\\CreateGroupMemberDto.cs",
-              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateGroupMemberDto.cs",
-              "RelativeToolTip": "HomeBalance.Application\\DTOs\\CreateGroupMemberDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Title": "IExpenseService.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\Services\\IExpenseService.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Application\\Services\\IExpenseService.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\Services\\IExpenseService.cs",
+              "RelativeToolTip": "HomeBalance.Application\\Services\\IExpenseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T10:38:24.114Z",
+              "WhenOpened": "2026-05-03T12:20:00.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExpensesController.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.API\\Controllers\\ExpensesController.cs",
+              "RelativeDocumentMoniker": "HomeBalance.API\\Controllers\\ExpensesController.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.API\\Controllers\\ExpensesController.cs",
+              "RelativeToolTip": "HomeBalance.API\\Controllers\\ExpensesController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T12:17:05.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.API\\Program.cs",
+              "RelativeDocumentMoniker": "HomeBalance.API\\Program.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.API\\Program.cs",
+              "RelativeToolTip": "HomeBalance.API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T12:16:39.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateShoppingItemDto.cs",
-              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateShoppingItemDto.cs",
-              "RelativeDocumentMoniker": "HomeBalance.Application\\DTOs\\CreateShoppingItemDto.cs",
-              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\DTOs\\CreateShoppingItemDto.cs",
-              "RelativeToolTip": "HomeBalance.Application\\DTOs\\CreateShoppingItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Title": "ExpenseRepository.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Infrastructure\\Repositories\\ExpenseRepository.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Infrastructure\\Repositories\\ExpenseRepository.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Infrastructure\\Repositories\\ExpenseRepository.cs",
+              "RelativeToolTip": "HomeBalance.Infrastructure\\Repositories\\ExpenseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T10:38:31.969Z",
+              "WhenOpened": "2026-05-03T12:16:07.856Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeBalance.Infrastructure",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj",
+              "RelativeToolTip": "HomeBalance.Infrastructure\\HomeBalance.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-03T12:15:22.506Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IExpenseRepository.cs",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\Repositories\\IExpenseRepository.cs",
+              "RelativeDocumentMoniker": "HomeBalance.Application\\Repositories\\IExpenseRepository.cs",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\Repositories\\IExpenseRepository.cs",
+              "RelativeToolTip": "HomeBalance.Application\\Repositories\\IExpenseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T12:15:05.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeBalance.Application",
+              "DocumentMoniker": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\HomeBalance.Application.csproj",
+              "RelativeDocumentMoniker": "HomeBalance.Application\\HomeBalance.Application.csproj",
+              "ToolTip": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Application\\HomeBalance.Application.csproj",
+              "RelativeToolTip": "HomeBalance.Application\\HomeBalance.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-03T12:11:56.664Z",
+              "EditorCaption": ""
             }
           ]
         }

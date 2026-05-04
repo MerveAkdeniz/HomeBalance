@@ -15,5 +15,6 @@ namespace HomeBalance.Domain.Entities
         public string Name { get; set; } = null!;
 
         public bool IsPurchased { get; set; } = false;
+        public Group Group { get; set; } = null!;
     }
 }

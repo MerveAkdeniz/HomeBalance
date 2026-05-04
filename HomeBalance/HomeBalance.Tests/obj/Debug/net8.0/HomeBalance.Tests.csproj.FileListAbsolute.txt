@@ -10,3 +10,4 @@ C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalanc
 C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\refint\HomeBalance.Tests.dll
 C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.pdb
 C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\ref\HomeBalance.Tests.dll
+C:\Project\HomeBalance\HomeBalance\HomeBalance.Tests\obj\Debug\net8.0\HomeBalance.Tests.csproj.AssemblyReference.cache

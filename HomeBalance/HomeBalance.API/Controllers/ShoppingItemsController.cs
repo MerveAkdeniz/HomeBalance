@@ -2,6 +2,7 @@
 using HomeBalance.Infrastructure.Data;
 using HomeBalance.Domain.Entities;
 using HomeBalance.Application.DTOs;
+using Microsoft.EntityFrameworkCore;
 
 namespace HomeBalance.API.Controllers;
 
@@ -17,7 +18,7 @@ public class ShoppingItemsController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult AddItem(CreateShoppingItemDto dto)
+    public async Task<IActionResult> AddItem(CreateShoppingItemDto dto)
     {
         var item = new ShoppingItem
         {
@@ -28,37 +29,54 @@ public class ShoppingItemsController : ControllerBase
         };
 
         _context.ShoppingItems.Add(item);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
-        return Ok(item);
+        var response = new ShoppingItemResponseDto
+        {
+            Id = item.Id,
+            Name = item.Name,
+            IsPurchased = item.IsPurchased,
+            GroupId = item.GroupId
+        };
+
+        return Ok(response);
     }
 
     [HttpGet]
-    public IActionResult GetItems()
+    public async Task<IActionResult> GetItems()
     {
-        return Ok(_context.ShoppingItems.ToList());
+        var items = await _context.ShoppingItems.ToListAsync();
+        var response = items.Select(x => new ShoppingItemResponseDto
+        {
+            Id = x.Id,
+            Name = x.Name,
+            IsPurchased = x.IsPurchased,
+            GroupId = x.GroupId
+        }).ToList();
+
+        return Ok(response);
     }
 
     [HttpPut("{id}")]
-    public IActionResult MarkAsPurchased(Guid id)
+    public async Task<IActionResult> MarkAsPurchased(Guid id)
     {
-        var item = _context.ShoppingItems.Find(id);
+        var item = await _context.ShoppingItems.FindAsync(id);
         if (item == null) return NotFound();
 
         item.IsPurchased = true;
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
         return Ok(item);
     }
 
     [HttpDelete("{id}")]
-    public IActionResult DeleteItem(Guid id)
+    public async Task<IActionResult> DeleteItem(Guid id)
     {
-        var item = _context.ShoppingItems.Find(id);
+        var item = await _context.ShoppingItems.FindAsync(id);
         if (item == null) return NotFound();
 
         _context.ShoppingItems.Remove(item);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
         return Ok();
     }

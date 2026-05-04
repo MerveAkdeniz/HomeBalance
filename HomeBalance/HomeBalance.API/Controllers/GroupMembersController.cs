@@ -2,6 +2,7 @@
 using HomeBalance.Infrastructure.Data;
 using HomeBalance.Domain.Entities;
 using HomeBalance.Application.DTOs;
+using Microsoft.EntityFrameworkCore;
 
 namespace HomeBalance.API.Controllers;
 
@@ -17,7 +18,7 @@ public class GroupMembersController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult AddMember(CreateGroupMemberDto dto)
+    public async Task<IActionResult> AddMember(CreateGroupMemberDto dto)
     {
         var member = new GroupMember
         {
@@ -28,25 +29,26 @@ public class GroupMembersController : ControllerBase
         };
 
         _context.GroupMembers.Add(member);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
         return Ok(member);
     }
 
     [HttpGet]
-    public IActionResult GetMembers()
+    public async Task<IActionResult> GetMembers()
     {
-        return Ok(_context.GroupMembers.ToList());
+        var members = await _context.GroupMembers.ToListAsync();
+        return Ok(members);
     }
 
     [HttpDelete("{id}")]
-    public IActionResult DeleteMember(Guid id)
+    public async Task<IActionResult> DeleteMember(Guid id)
     {
-        var member = _context.GroupMembers.Find(id);
+        var member = await _context.GroupMembers.FindAsync(id);
         if (member == null) return NotFound();
 
         _context.GroupMembers.Remove(member);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
         return Ok();
     }

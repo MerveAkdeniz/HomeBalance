@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "J72AVPJTPUY=",
+  "dgSpecHash": "pIaSwqpBl2I=",
   "success": true,
   "projectFilePath": "C:\\Project\\HomeBalance\\HomeBalance\\HomeBalance.Tests\\HomeBalance.Tests.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\merve\\.nuget\\packages\\bcrypt.net-next\\3.5.0\\bcrypt.net-next.3.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

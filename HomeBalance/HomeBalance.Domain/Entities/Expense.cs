@@ -19,5 +19,8 @@ namespace HomeBalance.Domain.Entities
         public string Description { get; set; } = null!;
 
         public DateTime Date { get; set; } = DateTime.UtcNow;
+        public User PaidByUser { get; set; } = null!;
+
+        public Group Group { get; set; } = null!;
     }
 }

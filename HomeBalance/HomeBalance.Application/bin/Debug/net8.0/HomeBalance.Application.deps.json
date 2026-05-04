@@ -8,13 +8,25 @@
     ".NETCoreApp,Version=v8.0": {
       "HomeBalance.Application/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "3.5.0",
           "HomeBalance.Domain": "1.0.0"
         },
         "runtime": {
           "HomeBalance.Application.dll": {}
         }
       },
+      "BCrypt.Net-Next/3.5.0": {
+        "runtime": {
+          "lib/netstandard2.1/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "3.5.0.0",
+            "fileVersion": "3.5.0.0"
+          }
+        }
+      },
       "HomeBalance.Domain/1.0.0": {
+        "dependencies": {
+          "BCrypt.Net-Next": "3.5.0"
+        },
         "runtime": {
           "HomeBalance.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -29,6 +41,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BCrypt.Net-Next/3.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6DaFW42NhDA1/QDR6/8nyv04QBswBXEaCh0AXtm0kfbTTRFeMh7ROmlniqrVjP0Mpx4raGE+oWsy1f6IC/jWAQ==",
+      "path": "bcrypt.net-next/3.5.0",
+      "hashPath": "bcrypt.net-next.3.5.0.nupkg.sha512"
     },
     "HomeBalance.Domain/1.0.0": {
       "type": "project",

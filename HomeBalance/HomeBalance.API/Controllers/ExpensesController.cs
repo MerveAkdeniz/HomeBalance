@@ -2,6 +2,9 @@
 using HomeBalance.Infrastructure.Data;
 using HomeBalance.Domain.Entities;
 using HomeBalance.Application.DTOs;
+using Microsoft.EntityFrameworkCore;
+using HomeBalance.Application.Repositories;
+using HomeBalance.Application.Services;
 
 namespace HomeBalance.API.Controllers;
 
@@ -9,47 +12,31 @@ namespace HomeBalance.API.Controllers;
 [Route("api/[controller]")]
 public class ExpensesController : ControllerBase
 {
-    private readonly AppDbContext _context;
+    private readonly IExpenseService _service;
 
-    public ExpensesController(AppDbContext context)
+    public ExpensesController(IExpenseService service)
     {
-        _context = context;
+        _service = service;
     }
 
     [HttpPost]
-    public IActionResult AddExpense(CreateExpenseDto dto)
+    public async Task<IActionResult> AddExpense(CreateExpenseDto dto)
     {
-        var expense = new Expense
-        {
-            Id = Guid.NewGuid(),
-            GroupId = dto.GroupId,
-            PaidByUserId = dto.PaidByUserId,
-            Amount = dto.Amount,
-            Description = dto.Description,
-            Date = DateTime.UtcNow
-        };
-
-        _context.Expenses.Add(expense);
-        _context.SaveChanges();
-
-        return Ok(expense);
+        var result = await _service.AddAsync(dto);
+        return Ok(result);
     }
 
     [HttpGet]
-    public IActionResult GetExpenses()
+    public async Task<IActionResult> GetExpenses()
     {
-        return Ok(_context.Expenses.ToList());
+        var result = await _service.GetAllAsync();
+        return Ok(result);
     }
 
     [HttpDelete("{id}")]
-    public IActionResult DeleteExpense(Guid id)
+    public async Task<IActionResult> DeleteExpense(Guid id)
     {
-        var expense = _context.Expenses.Find(id);
-        if (expense == null) return NotFound();
-
-        _context.Expenses.Remove(expense);
-        _context.SaveChanges();
-
+        await _service.DeleteAsync(id);
         return Ok();
     }
 }
