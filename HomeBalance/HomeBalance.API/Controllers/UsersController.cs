@@ -20,6 +20,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpPost]
+    [AllowAnonymous]
     public async Task<IActionResult> CreateUser(CreateUserDto dto)
     {
         var user = new User
@@ -48,7 +49,15 @@ public class UsersController : ControllerBase
     public async Task<IActionResult> GetUsers()
     {
         var users = await _context.Users.ToListAsync();
-        return Ok(users);
+
+        var response = users.Select(x => new UserResponseDto
+        {
+            Id = x.Id,
+            Name = x.Name,
+            Email = x.Email
+        }).ToList();
+
+        return Ok(response);
     }
 
     [HttpDelete("{id}")]

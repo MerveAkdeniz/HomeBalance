@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HomeBalance.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817f98992cb3c0643f7097804e51f28c45e390e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f07b2a91f89dd10b7a25767e77abac5c14cb17f")]
 [assembly: System.Reflection.AssemblyProductAttribute("HomeBalance.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HomeBalance.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
