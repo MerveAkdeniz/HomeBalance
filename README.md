@@ -6,12 +6,14 @@
   <img src="https://img.shields.io/badge/Entity%20Framework-0078D7?style=for-the-badge&logo=.net&logoColor=white" alt="Entity Framework" />
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server" />
   <img src="https://img.shields.io/badge/Clean%20Architecture-FF9900?style=for-the-badge&logo=architecture&logoColor=white" alt="Clean Architecture" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white" alt="JWT" />
 </div>
 
 <br/>
 
 <p align="center">
-  <b>A high-performance RESTful API designed for roommates and shared living spaces to automate expense and debt tracking.</b>
+  <b>ASP.NET Core Web API with Clean Architecture, JWT authentication, Repository/Service patterns, and EF Core.</b><br/>
+  A high-performance RESTful API designed for roommates and shared living spaces to automate expense and debt tracking.
 </p>
 
 ---
@@ -20,37 +22,46 @@
 
 Aims to eliminate the complex calculation processes such as *"Who paid for what?"* and *"Who owes how much to whom?"* experienced in shared homes or groups. Thanks to the advanced **Balance Engine**, it analyzes multiple and complex money transfers and extracts the simplest payment plan.
 
-## ✨ Key Features
-
-*   👥 **User & Group Management:** Users can be created and participate in multiple shared groups.
-*   💸 **Expense Tracking:** Group-specific expenses can be recorded, and who made the expense can be tracked.
-*   ⚖️ **Smart Debt Calculation (Balance Engine):** Resolves complex debt cycles and clearly calculates exactly who needs to pay how much to whom.
-*   🛒 **Shared Needs List:** Easy management of home needs and shopping lists (ShoppingItem).
-*   🛡️ **Data Security & Validation:** Secure, controlled data flow with DTOs (Data Transfer Objects) and Data Annotations/Validation.
-*   📖 **Automated Documentation:** Interactive documentation and testing capabilities for all API endpoints with Swagger (OpenAPI) integration.
-
 ## 📐 Architecture & Design Patterns
 
-This project was developed in 4 main layers, strictly adhering to **Clean Architecture** principles to maximize code maintainability, independence, and testability:
+This project strictly adheres to **Clean Architecture** principles to maximize code maintainability, independence, and testability.
 
-1.  **Domain Layer:** The heart of the project. Core Entities and interfaces (No dependencies on external libraries).
-2.  **Application Layer:** Business Logic, DTOs, and Validation processes.
-3.  **Infrastructure Layer:** Database connections, Entity Framework Core configurations, database integration, and SQL Server operations.
-4.  **API Layer:** Controllers handling incoming HTTP requests, Dependency Injection setups, and Swagger configuration.
+### Architecture Flow
+
+```text
+API → Application (Services/DTOs) → Domain (Entities) ← Infrastructure (EF Core/Repositories)
+```
+
+1.  **Domain Layer:** Core Entities and interfaces (No dependencies on external libraries).
+2.  **Application Layer:** Business Logic, DTOs, Service Interfaces, and Validation processes.
+3.  **Infrastructure Layer:** Database connections, Repository Pattern implementation, EF Core configurations, and SQL Server operations.
+4.  **API Layer:** Controllers handling HTTP requests, JWT Authentication, Dependency Injection, and Swagger configuration.
+
+## ✨ Key Features
+
+*   🔒 **JWT Authentication & Authorization:** Secure login system and endpoint protection using `[Authorize]`.
+*   🛡️ **Secure API Endpoints:** Implemented secure API endpoints with JWT Bearer authentication and Swagger integration.
+*   🔐 **Secure Password Storage:** Implementation of **BCrypt password hashing** for enhanced security.
+*   📦 **Data Transfer Objects (DTOs):** Secure, controlled data flow with DTO-based responses preventing over-posting and exposing sensitive data.
+*   ⚡ **Asynchronous Operations:** Fully **Async EF Core** implementation for high-performance database interactions.
+*   👥 **User & Group Management:** Users can be created and participate in multiple shared groups.
+*   💸 **Expense Tracking:** Group-specific expenses can be recorded, and payer details are tracked.
+*   ⚖️ **Smart Debt Calculation:** Resolves complex debt cycles and cleanly calculates exactly who needs to pay how much to whom.
 
 ## 🛠️ Technologies Used
 
 *   **Platform:** ASP.NET Core Web API (.NET 8)
-*   **ORM:** Entity Framework Core
+*   **Authentication:** JSON Web Tokens (JWT), BCrypt
+*   **ORM:** Entity Framework Core (Async)
 *   **Database:** Microsoft SQL Server
 *   **Documentation:** Swagger / OpenAPI
-*   **Architecture Approach:** Clean Architecture, N-Tier Architecture
+*   **Design Patterns:** Clean Architecture, Repository Pattern, Service Pattern
 
 ---
 
 ## 🚀 Getting Started
 
-Follow the steps below to run the project in your local environment:
+Follow these steps to run the project locally. The repository is kept clean and maintained with meaningful commit messages.
 
 ### 1. Clone the Repository
 ```bash
@@ -58,61 +69,83 @@ git clone https://github.com/MerveAkdeniz/HomeBalance.API.git
 cd HomeBalance.API
 ```
 
-### 2. Configure Database Connection
-Open the `appsettings.json` file in the API layer and add your SQL Server connection string appropriately:
+### 2. Configuration (`appsettings.json`)
+Open the `appsettings.json` file in the API layer and configure your SQL Server connection string and JWT settings:
 ```json
-"ConnectionStrings": {
-  "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=HomeBalanceDb;Trusted_Connection=True;TrustServerCertificate=True;"
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=HomeBalanceDb;Trusted_Connection=True;TrustServerCertificate=True;"
+  },
+  "Jwt": {
+    "Key": "Your_Super_Secret_Key_Here_Make_It_Long_Enough!",
+    "Issuer": "HomeBalanceAPI",
+    "Audience": "HomeBalanceAPI",
+    "DurationInMinutes": 60
+  }
 }
 ```
 
-### 3. Run Migrations & Create Database
-Create the database via Package Manager Console (PMC) or .NET CLI:
+### 3. Run Migrations & Update Database
+Apply the Entity Framework migrations to create your database schema:
 ```bash
-# If using Package Manager Console:
-Add-Migration InitialCreate -StartupProject HomeBalance.API
-Update-Database
+dotnet ef database update --project HomeBalance.Infrastructure --startup-project HomeBalance.API
 ```
+*(Or use `Update-Database` in Package Manager Console)*
 
-### 4. Run the Project
+### 4. Run the Application
 ```bash
 dotnet run --project HomeBalance.API
 ```
-Once the project is running, navigate to `https://localhost:<port>/swagger` in your browser to test the API through the UI.
+Once running, navigate to the interactive API documentation at:
+👉 `https://localhost:<port>/swagger`
 
 ---
 
-## 🔌 Example Endpoints
+## 🔌 Example Requests
 
-| HTTP Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `POST` | `/api/Users` | Creates a new user record |
-| `POST` | `/api/Groups` | Creates a new home/group environment |
-| `POST` | `/api/Expenses` | Adds a new expense bill to the relevant group |
-| `GET` | `/api/Balances/{groupId}` | **Calculates the detailed debt status within the group (Balance Engine)** |
+### 1. Login (Authenticate & Get Token)
+**`POST /api/Auth/Login`**
 
-<details>
-<summary><b>Click to View Example JSON Requests (Payloads)</b></summary>
-
-**Create User (POST /api/Users)**
+**Request:**
 ```json
 {
+  "email": "merve@gmail.com",
+  "password": "SecurePassword123!"
+}
+```
+
+**Response:**
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "expiration": "2026-05-04T18:40:05Z"
+}
+```
+
+### 2. Get Users (Secured Endpoint)
+**`GET /api/Users`**
+
+*Requires the JWT token to be passed in the `Authorization` header.*
+
+**Headers:**
+```http
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Response (DTO-based):**
+```json
+{
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "name": "Merve",
   "email": "merve@gmail.com",
-  "password": "Merve123!"
+  "joinedGroups": [
+    {
+      "groupId": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+      "groupName": "Roommates"
+    }
+  ]
 }
 ```
-
-**Add Expense (POST /api/Expenses)**
-```json
-{
-  "groupId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "paidByUserId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "amount": 150.00,
-  "description": "Market"
-}
-```
-</details>
 
 ---
 
@@ -123,4 +156,4 @@ Once the project is running, navigate to `https://localhost:<port>/swagger` in y
 [LinkedIn](https://www.linkedin.com/in/merve-akdeniz-329409214/) | [GitHub](https://github.com/MerveAkdeniz)
 
 ---
-*This project was developed to produce scalable solutions to real-world problems by taking modern software development standards into account.*
+*This project is built to demonstrate scalable solutions to real-world problems using modern software development standards, clean architecture, and best practices.*
