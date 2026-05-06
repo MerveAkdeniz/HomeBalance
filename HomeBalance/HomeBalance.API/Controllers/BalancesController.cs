@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using HomeBalance.Infrastructure.Data;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace HomeBalance.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class BalancesController : ControllerBase
 {
     private readonly AppDbContext _context;
@@ -15,22 +18,21 @@ public class BalancesController : ControllerBase
     }
 
     [HttpGet("{groupId}")]
-    public IActionResult CalculateBalance(Guid groupId)
+    public async Task<IActionResult> CalculateBalance(Guid groupId)
     {
-        var members = _context.GroupMembers
+        var members = await _context.GroupMembers
             .Where(x => x.GroupId == groupId)
             .Select(x => x.UserId)
-            .ToList();
+            .ToListAsync();
 
-        var expenses = _context.Expenses
+        var expenses = await _context.Expenses
             .Where(x => x.GroupId == groupId)
-            .ToList();
+            .ToListAsync();
 
         if (!members.Any())
             return BadRequest("No members");
 
         var totalExpense = expenses.Sum(x => x.Amount);
-
         var perPerson = totalExpense / members.Count;
 
         var result = new List<object>();

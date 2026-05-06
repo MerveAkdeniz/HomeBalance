@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HomeBalance.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f07b2a91f89dd10b7a25767e77abac5c14cb17f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b35b8f04f25dcfdff8096aa8924c4bf888d44919")]
 [assembly: System.Reflection.AssemblyProductAttribute("HomeBalance.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HomeBalance.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
